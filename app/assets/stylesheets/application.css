@@ -1,33 +1,11 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/*This is where the home page is styled*/
 .statichome  {
 	background-image: url("/assets/director_red.jpg");
 	background-size: 100%;
 	color: white;
 	background-repeat: no-repeat;
+	overflow: hidden;
 }
-.welcome {
-	url("Pics/movie_screen2.jpg");
-	background-size: cover;
-}
-
-.img {
-	display: inline-block;
-}
-
 #circle {
 	width: 300px;
 	height: 300px;
@@ -47,28 +25,151 @@
 	border-radius: 50px;
 	border: solid white 5px;
 	margin-top: 123px;
-	margin-left: 918px;
+	margin-left: 1120px;
 	padding: 0px;
 	float: left;
 	text-align: center;
 	position: fixed;
 }
 
-h1 {
-	padding: 50px 0px 25px 0px;
+	
+/*this is where the static home page ends*/
+
+
+/*edit page starts*/
+ 
+
+#circle {
+	width: 300px;
+	height: 300px;
+	background: black;
+	border-radius: 50px;
+	border: solid white 5px;
+	margin-top: 123px;
+	padding: 0px;
+	text-align: center;
+	float: left;
+	position: fixed;
 }
 
-h1.center {
+#circle2 {
+	width: 300px;
+	height: 300px;
+	background: black;
+	border-radius: 50px;
+	border: solid white 5px;
+	margin-top: 123px;
+	margin-left: 952px;
+	padding: 0px;
+	float: left;
 	text-align: center;
-	color: black;
-	padding-top: 5%;
+	position: fixed;
 }
 
-h1.mid {
+/*This is where the edit page is stlyed*/
+.center {
 	text-align: center;
-	color: blue;
-	margin: 0 auto;
+}
+
+
+.editpage {
+	background-image: url("/assets/editmess2.jpg");
+	background-size: 100%;
+}
+
+.editform{
+	height: 550px;
+	width: 200px;
+	font-size: 25px;
 	padding: 0px 0px 0px 0px;
+    opacity: 0.8;
+}
+
+
+/*edit page ends*/
+
+#footer{
+	text-align: center;
+}
+.usersnew {
+	background-image: url("/assets/signup.jpg");
+	background-size: 100%;
+} 
+
+.welcome {
+	url("Pics/movie_screen2.jpg");
+	background-size: cover;
+}
+
+
+/*login page starts*/
+.clapper {
+	padding-left: 402px;
+}
+.wrapperlogin {
+	overflow: hidden;
+	background-color: gray;
+	color: white;
+	margin-top: 30px;
+	margin-left: 40px;
+	
+}
+
+/*This is where the Login page is styled*/
+.wrapperlogin {
+	margin: 0 auto;
+	background-color: gray;
+	color: white;
+	margin-top: 30px;
+	
+}
+
+.clapper {
+	padding-left: 402px;	
+}
+
+.login {
+	font-family: 'chalkduster';
+	font-size: 30px;
+	margin-left: 655px;
+    margin-bottom: 272px;
+    margin-top: -315px;
+}
+
+.loginh2 {
+	font-family: 'chalkduster';
+	font-size: 25px;
+    margin-top: -221px;
+    margin-left: 494px;
+}
+
+.loginh3 {
+	font-family: 'chalkduster';
+	height: 30px;
+	font-size: 25px;
+	margin-bottom: 800px;
+    margin-left: 498px;
+    margin-top: 50px;
+ }
+
+ .button1 {
+	margin-left: 666px;
+    margin-top: -720px;
+    size: 20em;
+}  
+/*The login page ends here*/
+
+.input1 {
+	height: 21px;
+	width: 164px;
+}
+/* this is where the log-in page ends */
+
+
+
+h1 {
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
 
 a:link {
@@ -116,11 +217,68 @@ ul, li {
 	background-color: grey;
 	opacity: 0.8;
 }
+/*This is where the profile page is styled*/
+.profilebod{
+	background-image: url('/assets/movie_screen2.jpg');
+	background-size: cover;
+}
+
+#profilepage{
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 700px;
+	height: 400px;
+}
 
 
+#headshot {
+	margin: 0 auto;
+	float: right;
+}
+#headshot1 {
+	
+}
 
 
+/*profile page ends*/
 
+/*this is where the search styling starts*/
+
+#headshot{
+	margin: 0 auto;
+	float: right;
+}
+
+/*This is where the search field is styled*/
+.searchbod{
+	background-image: url('/assets/projector2.jpg'); 
+	background-size: 130%;
+}
+
+.searchwrap{
+	height: 300px;
+	width: 300px;
+	margin-top: 150px;
+	margin-right: 50px;
+	float: right;
+}
+
+#searchfield{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#searchshow{
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*bands signup page starts here*/
+
+#bands {
+	background-color: grey;
+	
+}
 
 
 

@@ -1,17 +1,30 @@
-<body>
-<%= render 'layouts/navigation' %>
-<img src= "/assets/clapper.png">
-
-<div class="img"> 
-<h2>Log In</h2>
+<%= render 'layouts/navigation'%>
 <h2><%= flash[:notice] if flash[:notice] %></h2>
-	<%= form_tag login_path do%>
-		<%= label_tag :username %>
-		<%= text_field_tag :username %>
-		<%= label_tag :password %>
-		<%= text_field_tag :password %>
-		<%= submit_tag "Log In" %>
-	<% end -%>	
-</div>
+<body class="wrapperlogin">
 
+	<div class="clapper">
+		<img src= "/assets/clapper.png">
+	</div>
+
+	
+	<h2 class= "login">LOG IN</h2>
+ 
+	<%= form_tag login_path do%>
+	<div class="loginh2">
+		<%= label_tag :username %>
+		<%= text_field_tag :username %> 
+	</div>
+
+	<div class="loginh3">
+		<%= label_tag :password %>
+		<%= password_field_tag :password %>
+	</div>
+
+
+	<div class= "button1">
+		<%= submit_tag "ACTION" %>
+
+	<% end %>	
+</div>
 </body>
+

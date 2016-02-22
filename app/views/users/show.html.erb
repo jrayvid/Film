@@ -1,13 +1,27 @@
+<body class="profilebod">
+<div id="profilepage">
+<%= render 'layouts/navigation' %>
 <h1>Welcome <%= @user.fname %></h1>
-
+<br>
+	<div id="headshot">
+	<%= image_tag @user.avatar.url :medium %>
+	</div>	
 <div>
-First Name:<%= @user.fname %>
-Last Name:<%= @user.lname %>
-City:<%= @user.city %>
-State:<%= @user.state %>
-Email:<%= @user.email %>
-Username:<%= @user.username %>
+First Name:<%= @user.fname %><br><br>
+Last Name:<%= @user.lname %><br><br>
+City:<%= @user.city %><br><br>
+State:<%= @user.state %><br><br>
+Email:<%= @user.email %><br><br>
+Username <%= @user.username %><br><br>
+Role: <%= @user.roll %> 
 </div>
 
-<br><br>
-<%= render 'layouts/usernavigation' %>
+<br>
+<div id="footer">
+<%= render 'layouts/usernavigation' %>	
+</div>
+
+</body>
+
+
+

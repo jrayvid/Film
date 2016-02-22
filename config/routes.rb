@@ -2,6 +2,12 @@ Rails.application.routes.draw do
 
   
 
+  get 'posts/show'
+
+  get 'posts/new'
+
+  get 'posts/edit'
+
   root 'static#home'
   get '/about' => 'static#about'
   get '/contact' => 'static#contact'
@@ -12,6 +18,11 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy'
   delete '/logout' => 'sessions#destroy'
 
+
+  get '/search_page' => 'users#search_page'
+  get '/search' => 'users#search'
+
+
   # post 'users/new' => 'user#show'
   
   # The priority is based upon order of creation: first created -> highest priority.
@@ -20,6 +31,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
 
   resources :users
+  resources :bands
 
 
   # Example of regular route:

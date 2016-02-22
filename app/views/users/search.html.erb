@@ -1,0 +1,30 @@
+<body class="searchbod">
+<div class="searchwrap">
+<div id="searchfield">
+<h1>Search for Talent</h1>
+<%= form_tag("/search_page", method: "get") do %>
+	<h2><%= label_tag(:query, "Search Roles:") %></h2>
+	<%= text_field_tag(:query) %>
+	<%= submit_tag("Submit") %>
+<% end %>
+</div>
+<br><br><br><br><br>
+<div id="searchshow">
+<h1>Search Results</h1>
+<% if @users %>
+<% @users.each do |u|%>
+<%= u.fname %>
+<%= u.lname %>
+<div class="image">
+<%= image_tag u.avatar.url :thumb %> 
+</div>
+<% end %>
+<%end%>
+</div>
+<br><br><br><br><br><br>
+<div id="footer">
+<%= link_to "Back to Your Profile Page", user_path(current_user)%>
+</div>
+</div>
+</body>
+

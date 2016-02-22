@@ -14,3 +14,16 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(){
+
+$('.image > img').hover(makeLarger, makeNormal);
+
+function makeLarger() {
+	$(this).css({height: '+=50%', width: '+=50%'});
+}
+function makeNormal () {
+	$(this).css({height : "", width: ""});
+}
+
+
+});
