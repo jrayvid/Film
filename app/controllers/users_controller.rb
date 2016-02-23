@@ -26,7 +26,7 @@ def update
  @user = User.find(params[:id])
  if @user.update_attributes(user_params)
     if @user.roll == "Band" 
-      redirect_to bands_path
+      redirect_to band_path
     else
     redirect_to user_path(current_user)
   end

@@ -14,9 +14,21 @@ class BandsController < ApplicationController
 		redirect_to band_path(@band.id)
 		else
 		redirect_to :back
-		end
+	end
+end
+
+	def edit
+	@band = Band.find(params[:id])
 	end
 
+	def update
+		@band = Band.find(params[:id])
+		if @band.update(band_params)
+			redirect_to band_path(@band)
+		else
+			redirect_to user_path(current_user)
+		end
+	end
 
 
 
