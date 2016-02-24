@@ -6,25 +6,28 @@
     <li><%= link_to 'Contact', contact_path, style: 'color:#ffffff' %></li>
     </ul>
   </nav>
-<div id="signupform"><h2>Sign Up!</h2>
+  <div class="container center_div">
+<div id="signupform">
+  <h2>Sign Up!</h2>
   <%= form_for @user do |f| %>
-  <h2><%= f.label :"First Name" %><br>
+  <h2><%= f.label :"First Name", id: "firstname" %><br>
   <%= f.text_field :fname %><br>
-  <%= f.label :"Last Name" %><br>
+  <%= f.label :"Last Name", id: "firstname" %><br>
   <%= f.text_field :lname %><br>
-  <%= f.label :City %><br>
+  <%= f.label :City,id: "firstname" %><br>
   <%= f.text_field :city %><br>
-  <%= f.label :State %><br>
+  <%= f.label :State,id: "firstname" %><br>
   <%= f.text_field :state %><br>
-  <%= f.label :"Email Address"%><br>
+  <%= f.label :"Email",id: "firstname"%><br>
   <%= f.text_field :email %><br>
-  <%= f.label :Username %><br>
+  <%= f.label :Username,id: "firstname" %><br>
   <%= f.text_field :username %><br>
-  <%= f.label :Password %><br>
+  <%= f.label :Password,id: "firstname" %><br>
   <%= f.password_field :password %>
   <br>
   <%= f.submit 'Sign Up'%></h2>
 <% end %>
+</div>
 </div>
 </body>
 

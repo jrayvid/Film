@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160223203623) do
+ActiveRecord::Schema.define(version: 20160224190618) do
 
   create_table "bands", force: :cascade do |t|
     t.string   "bname"
@@ -24,6 +24,10 @@ ActiveRecord::Schema.define(version: 20160223203623) do
     t.datetime "avatar_updated_at"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
+    t.string   "mp3_file_name"
+    t.string   "mp3_content_type"
+    t.integer  "mp3_file_size"
+    t.datetime "mp3_updated_at"
   end
 
   create_table "comments", force: :cascade do |t|
