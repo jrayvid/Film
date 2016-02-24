@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//=require bootstrap-sprockets
+
 $(document).ready(function(){
 
 $('.image > img').hover(makeLarger, makeNormal);

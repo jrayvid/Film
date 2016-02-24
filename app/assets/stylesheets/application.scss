@@ -1,4 +1,12 @@
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
 /*This is where the home page is styled*/
+
 .statichome  {
 	background-image: url("/assets/director_red.jpg");
 	background-size: 100%;
@@ -33,7 +41,7 @@
 }
 
 	
-/*this is where the static home page ends*/
+/*this is where the static home page ends
 
 
 /*edit page starts*/
@@ -97,7 +105,7 @@
 } 
 
 .welcome {
-	url("Pics/movie_screen2.jpg");
+	background-image:url("Pics/movie_screen2.jpg");
 	background-size: cover;
 }
 
@@ -279,6 +287,5 @@ ul, li {
 	background-color: grey;
 	
 }
-
 
 

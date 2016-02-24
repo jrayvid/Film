@@ -1,0 +1,26 @@
+<h1><%= @message.title %></h1>
+<p>Posted by <%= @message.user.username %><br><%= time_ago_in_words(@message.created_at)%> ago</p> 
+<p><%= @message.description %></p>
+
+<h4>Opinions:</h4>
+<%= render @message.comments %>
+
+<h2>Give Your Opinion</h2>
+<%= render 'comments/form' %>
+
+
+
+
+<%= link_to "Back", messages_path %>
+
+<% if @message.user_id == current_user.id %>
+<%= link_to "Edit", edit_message_path(@message) %>
+<%= link_to "Delete", message_path(@message), method: :delete, data: {confirm: "Are you sure you want to delete?  This can Not be undone"} %>
+<% end %>
+
+
+
+
+
+
+

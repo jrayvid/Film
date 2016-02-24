@@ -32,6 +32,10 @@ Rails.application.routes.draw do
 
   resources :users
   resources :bands
+  resources :messages do
+    resources :comments
+  end
+
 
 
   # Example of regular route:

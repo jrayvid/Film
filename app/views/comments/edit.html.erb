@@ -1,0 +1,7 @@
+<h1>Edit Comments</h1>
+
+<%= simple_form_for([@message, @comment]) do |c| %>
+	<%= c.input :content, label: "Comment" %>
+	<%= c.button :submit %>
+
+	<% end %>
