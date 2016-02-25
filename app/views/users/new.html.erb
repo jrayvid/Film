@@ -10,20 +10,20 @@
 <div id="signupform">
   <h2>Sign Up!</h2>
   <%= form_for @user do |f| %>
-  <h2><%= f.label :"First Name", id: "firstname" %><br>
-  <%= f.text_field :fname %><br>
-  <%= f.label :"Last Name", id: "firstname" %><br>
-  <%= f.text_field :lname %><br>
-  <%= f.label :City,id: "firstname" %><br>
-  <%= f.text_field :city %><br>
-  <%= f.label :State,id: "firstname" %><br>
-  <%= f.text_field :state %><br>
-  <%= f.label :"Email",id: "firstname"%><br>
-  <%= f.text_field :email %><br>
-  <%= f.label :Username,id: "firstname" %><br>
-  <%= f.text_field :username %><br>
-  <%= f.label :Password,id: "firstname" %><br>
-  <%= f.password_field :password %>
+  <h2><br>
+  <%= f.text_field :fname, :placeholder => "First Name" %><br>
+  <br>
+  <%= f.text_field :lname, :placeholder => "Last Name" %><br>
+  <br>
+  <%= f.text_field :city, :placeholder => "City" %><br>
+  <br>
+  <%= f.text_field :state, :placeholder => "State" %><br>
+  <br>
+  <%= f.text_field :email, :placeholder => "Email" %><br>
+  <br>
+  <%= f.text_field :username, :placeholder => "UserName" %><br>
+  <br>
+  <%= f.password_field :password, :placeholder => "Password" %>
   <br>
   <%= f.submit 'Sign Up'%></h2>
 <% end %>
