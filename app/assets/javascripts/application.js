@@ -16,6 +16,7 @@
 //= require_tree .
 //=require bootstrap-sprockets
 
+
 $(document).ready(function(){
 
 $('.image > img').hover(makeLarger, makeNormal);

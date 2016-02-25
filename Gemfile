@@ -3,6 +3,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap_form'
 gem "paperclip", "~> 4.2"
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
+gem 'mp3_player'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
