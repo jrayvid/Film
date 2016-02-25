@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160224190618) do
+ActiveRecord::Schema.define(version: 20160225195534) do
 
   create_table "bands", force: :cascade do |t|
     t.string   "bname"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20160224190618) do
     t.string   "mp3_content_type"
     t.integer  "mp3_file_size"
     t.datetime "mp3_updated_at"
+    t.string   "track"
   end
 
   create_table "comments", force: :cascade do |t|
