@@ -3,8 +3,9 @@ class VideosController < ApplicationController
 
   # GET /videos
   def index
-    @videos = Video.all
+   
     @band = Band.find(params[:band_id])
+    @videos = @band.videos
   end
 
   # GET /videos/1
@@ -45,8 +46,10 @@ class VideosController < ApplicationController
 
   # DELETE /videos/1
   def destroy
+    @video = Video.find(params[:id])
+    @band = Band.find(params[:band_id])
     @video.destroy
-    redirect_to videos_url, notice: 'Video was successfully destroyed.'
+    redirect_to band_path, notice: 'Video was successfully destroyed.'
   end
 
   private

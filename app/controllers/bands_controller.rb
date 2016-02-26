@@ -4,7 +4,8 @@ class BandsController < ApplicationController
 	end
 
 	def show
-	@band = Band.find(params[:id])
+		@band = Band.find(params[:id])
+		@video = @band.video
 	end
 
 	def new

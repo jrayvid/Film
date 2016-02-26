@@ -17,3 +17,7 @@
 <%= link_to "make a video", new_band_video_path(@band, @video) %>
 <li><%= link_to "Edit Band Page", edit_band_path(@band) %></li>
 <li><%= link_to "Back To Profile", user_path(current_user) %>
+<li>
+<%# unless @video.nil? %>
+	<%= link_to "See Band Videos", band_videos_path(@band, @videos) %>
+<%# end %>

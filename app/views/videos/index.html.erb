@@ -16,9 +16,9 @@
       <tr>
         <td><%= video.title %></td>
         <td><%= video.band_id %></td>
-        <td><%= link_to 'Show', video %></td>
+        <td><%= link_to 'Show', band_video_path(@band, video) %></td>
         <td><%= link_to 'Edit', edit_band_video_path(@band, video) %></td>
-        <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', band_video_path(@band, video), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
