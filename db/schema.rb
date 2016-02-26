@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160225213307) do
+ActiveRecord::Schema.define(version: 20160225234040) do
 
   create_table "bands", force: :cascade do |t|
     t.string   "bname"
@@ -66,6 +66,14 @@ ActiveRecord::Schema.define(version: 20160225213307) do
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.string   "roll"
+  end
+
+  create_table "videos", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "band_id"
+    t.string   "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

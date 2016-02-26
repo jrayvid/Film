@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   
 
+  resources :videos
   get 'posts/show'
 
   get 'posts/new'
