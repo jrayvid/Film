@@ -1,4 +1,6 @@
 class Band < ActiveRecord::Base
+	belongs_to :user
+	has_many :videos
 	
 
 has_attached_file :avatar, :styles => {:large => "500x500>", :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png" 

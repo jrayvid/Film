@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   
 
-  resources :videos
+  
   get 'posts/show'
 
   get 'posts/new'
@@ -32,7 +32,11 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
 
   resources :users
-  resources :bands
+  
+  resources :bands do
+    resources :videos
+  end
+
   resources :messages do
     resources :comments
   end

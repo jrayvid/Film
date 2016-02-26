@@ -1,4 +1,7 @@
 class BandsController < ApplicationController
+	def index
+		@bands = Band.all
+	end
 
 	def show
 	@band = Band.find(params[:id])
@@ -29,12 +32,18 @@ end
 			redirect_to user_path(current_user)
 		end
 	end
-
+	
+	def destroy
+ 	@band = Band.find(params[:id])
+ 	@band.delete
+ 	flash[:notice] = "Band Deleted!"
+ 	redirect_to user_path(current_user) 
+	end	
 
 
 private
 def band_params
-	params.require(:band).permit(:bname, :city, :state, :email, :avatar, :mp3, :track, :video)
+	params.require(:band).permit(:bname, :city, :state, :email, :avatar, :mp3, :track)
 	
 end
 

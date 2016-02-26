@@ -1,0 +1,7 @@
+<h1>This is the band index page</h1>
+
+
+<% @bands.each do |b| %>
+<%= b.id %>
+<%= link_to b.bname, band_path(b)%>
+<% end %>

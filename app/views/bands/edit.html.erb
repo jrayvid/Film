@@ -15,8 +15,10 @@
   <%= f.file_field :mp3%><br>
   <%= f.label :"Track Name"  %><br>
   <%= f.text_field :track %><br>
-  <%= f.label :"Video"  %><br>
-  <%= f.file_field :video %><br>
   
-  <%= f.submit 'Edit'%>
+  
+  <%= f.submit 'Edit'%><br>
+  
+<%= link_to "Delete Band", band_path(@band), method: :delete, data: { confirm: "You Want To Delete This Band" } %>
+
 <% end %>

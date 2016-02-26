@@ -4,15 +4,18 @@ class VideosController < ApplicationController
   # GET /videos
   def index
     @videos = Video.all
+    @band = Band.find(params[:band_id])
   end
 
   # GET /videos/1
   def show
+    @band = Band.find(params[:band_id])
   end
 
   # GET /videos/new
   def new
     @video = Video.new
+    @band = Band.find(params[:band_id])
   end
 
   # GET /videos/1/edit
@@ -21,10 +24,11 @@ class VideosController < ApplicationController
 
   # POST /videos
   def create
-    @video = Video.new(video_params)
-
+    @band = Band.find(params[:band_id])
+    @video = @band.videos.build(video_params)
+    @video.user_id = current_user.id
     if @video.save
-      redirect_to @video, notice: 'Video was successfully created.'
+      redirect_to band_video_path(@band, @video), notice: 'Video was successfully created.'
     else
       render :new
     end

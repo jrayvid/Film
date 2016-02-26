@@ -1,4 +1,5 @@
 <h1> BAND PAGE </h1>
+<%= render 'layouts/navigation' %>
 
 
 <h1> Welcome <%= @band.bname %></h1>
@@ -7,11 +8,12 @@
 
 
   <%= audio_tag @band.mp3, controls: true %>
-  <%= video_tag @band.video, controls: true %>
+  
 
-	<h1><%= @band.track %></h1>
-
-
+	<h1> <%= @band.track %></h1>
 
 
-<li><%= link_to "Edit Your Account", edit_band_path(@band) %></li>
+
+<%= link_to "make a video", new_band_video_path(@band, @video) %>
+<li><%= link_to "Edit Band Page", edit_band_path(@band) %></li>
+<li><%= link_to "Back To Profile", user_path(current_user) %>

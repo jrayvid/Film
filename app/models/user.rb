@@ -2,7 +2,8 @@ class User < ActiveRecord::Base
 	has_secure_password
 	has_many :messages
 	has_many :comments
-	has_many :video
+	has_many :videos
+	has_many :bands
 
 
 has_attached_file :avatar, :styles => {:large => "500x500>", :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png" 
