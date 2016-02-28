@@ -5,7 +5,10 @@
   <%= @video.title %>
 </p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/<%= @video.url.match(/\?v=(.+)/)[1] %>" frameborder="0" allowfullscreen></iframe>
+<iframe width="300" height="315" src="https://www.youtube.com/embed/<%= @video.url.match(/\?v=(.+)/)[1] %>" frameborder="0" allowfullscreen></iframe>
 <br>
 <%= link_to 'Edit', edit_band_video_path(@band, @video) %> |
 <%= link_to 'Band Profile', band_path(@band) %>
+<li><%= link_to "Back To Profile", user_path(current_user) %>
+<li><%= link_to "Edit Profile", edit_user_path(current_user) %>
+<% render 'layouts/usernavigation' %>

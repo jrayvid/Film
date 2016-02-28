@@ -12,6 +12,7 @@
   </thead>
 
   <tbody>
+    
     <% @videos.each do |video| %>
       <tr>
         <td><%= video.title %></td>
@@ -27,3 +28,4 @@
 <br>
 
 <%= link_to 'New Video', new_band_video_path %>
+<li><%= link_to "Back To Profile", user_path(current_user) %>

@@ -1,8 +1,17 @@
+
+
+	<h1><div class="page-header">MESSAGE BOARDS</div></h1>
+<div class="col-lg-3">
 <%= @messages.each do |message| %>
-<h2><%= message.title %></h2>
-<%= link_to "View Message", message_path(message), class: "btn btn-dafault" %>
-
-
+	<p><%= message.title %></p>
+	<div class="btn btn-danger btn-sm" role="button"><%= link_to "View Message", message_path(message), class: "btn btn-dafault" %></div>
+	
 <% end %><br><br>
 
-<%= link_to "New Message", new_message_path%>
+
+<%= link_to "New Message", new_message_path %>
+<li><%= link_to "Back To Profile", user_path(current_user) %>
+
+
+</div>
+</div>
