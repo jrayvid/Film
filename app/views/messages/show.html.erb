@@ -1,4 +1,5 @@
-<h1><%= @message.title %></h1>
+
+
 <p>Posted by <%= @message.user.username %><br><%= time_ago_in_words(@message.created_at)%> ago</p> 
 <p><%= @message.description %></p>
 
@@ -8,7 +9,7 @@
 <h2>Give Your Opinion</h2>
 <%= render 'comments/form' %>
 
-
+</div>
 
 
 <%= link_to "Back", messages_path %>

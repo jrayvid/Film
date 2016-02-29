@@ -1,6 +1,8 @@
 <body class="profilebod">
+	
+<%= render 'layouts/usernavigation' %>
+	
 <div id="profilepage">
-<%= render 'layouts/navigation' %>
 <h1>Welcome <%= @user.fname %></h1>
 <br>
 	<div id="headshot">
@@ -18,7 +20,7 @@ Role: <%= @user.roll %>
 
 <br>
 <div id="footer">
-<%= render 'layouts/usernavigation' %>	
+	
 </div>
 
 </body>

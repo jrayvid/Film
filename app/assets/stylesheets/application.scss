@@ -2,15 +2,24 @@
 @import "bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 
-
+.navbar-nav1 {
+	padding-top: 10px; 
+	margin-bottom: 0px;
+	margin-top: -44px;
+	border-top-width: -10px;
+	
+	
+}
 /*This is where the home page is styled*/
 
 .statichome  {
 	background-image: url("/assets/director_red.jpg");
-	background-size: 100%;
+	background-image: fixed;
+	background-size: cover;
 	color: white;
 	background-repeat: no-repeat;
-	overflow: hidden;
+	// overflow: hidden;
+	background-color: black;
 }
 #circle {
 	width: 300px;
@@ -42,35 +51,7 @@
 /*this is where the static home page ends
 
 
-// /*edit page starts*/
- 
 
-// #circle {
-// 	width: 300px;
-// 	height: 300px;
-// 	background: black;
-// 	border-radius: 50px;
-// 	border: solid white 5px;
-// 	margin-top: 123px;
-// 	padding: 0px;
-// 	text-align: center;
-// 	float: left;
-// 	position: fixed;
-// }
-
-// #circle2 {
-// 	width: 300px;
-// 	height: 300px;
-// 	background: black;
-// 	border-radius: 50px;
-// 	border: solid white 5px;
-// 	margin-top: 123px;
-// 	margin-left: 952px;
-// 	padding: 0px;
-// 	float: left;
-// 	text-align: center;
-// 	position: fixed;
-// }
 
 /*This is where the edit page is stlyed*/
 .center {
@@ -108,69 +89,68 @@
 }
 
 
-// /*login page starts*/
-
-// .clapper {
-// 	padding-left: 402px;
-// }
-// .wrapperlogin {
-// 	overflow: hidden;
-// 	background-color: gray;
-// 	color: #000000;
-// 	margin-top: 30px;
-// 	margin-left: 40px;
-	
-// }
 
 /*This is where the Login page is styled*/
 .wrapperlogin {
-	margin: 0 auto;
+	// background: url("/assets/clapper.png");
+	background-image: fixed;
+	background-opacity: .03;
+	background-repeat: no-repeat;
 	background-color: gray;
-	color: white;
+	
+	
 	margin-top: 30px;
+	margin: 0 auto;
 	
 }
 
-.clapper {
-	padding-left: 402px;	
-}
-
-.login {
-	font-family: 'chalkduster';
-	font-size: 30px;
-	margin-left: 655px;
-    margin-bottom: 272px;
-    margin-top: -315px;
-}
-
-.loginh2 {
-	font-family: 'chalkduster';
-	font-size: 25px;
-	color: white;
-    margin-top: -221px;
-    margin-left: 494px;
-}
-
-.loginh3 {
-	font-family: 'chalkduster';
-	height: 30px;
-	font-size: 25px;
-	color: white;
-	margin-bottom: 800px;
-    margin-left: 498px;
-    margin-top: 50px;
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
  }
 
- .button1 {
-	margin-left: 666px;
-    margin-top: -720px;
-    size: 20em;
-}  
+.clapper {
 
-.input1 {
-	height: 21px;
-	width: 164px;
-}
+	padding-left: 402px;
+	}
+
+// .login {
+// 	font-family: 'chalkduster';
+// 	font-size: 30px;
+// 	margin-left: 655px;
+//     margin-bottom: 272px;
+//     margin-top: -315px;
+// }
+
+// .loginh2 {
+// 	font-family: 'chalkduster';
+// 	font-size: 25px;
+// 	color: white;
+//     margin-top: -221px;
+//     margin-left: 494px;
+// }
+
+// .loginh3 {
+// 	font-family: 'chalkduster';
+// 	height: 30px;
+// 	font-size: 25px;
+// 	color: white;
+// 	margin-bottom: 800px;
+//     margin-left: 498px;
+//     margin-top: 50px;
+//  }
+
+//  .button1 {
+// 	margin-left: 666px;
+//     margin-top: -720px;
+//     size: 20em;
+// }  
+
+// .input1 {
+// 	height: 21px;
+// 	width: 164px;
+// }
 /* this is where the log-in page ends */
 
 
@@ -291,5 +271,36 @@ ul, li {
 	background-color: grey;
 	
 }
+/* Message show-page styles */
+.message-show {
+	box-sizing: border-box;
+	background-color: #383838;
+	padding: 2.0em 1.5em;
+	border-bottom: 4px solid #0a8fd5;
+	color: #fff;
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+
+	h2 {
+		margin-top: 0;
+	}
+
+	.message-desc {
+		font-size: 1.1em;
+		line-height: 1.75;
+		margin-bottom: 50px;
+	}
+
+	.message-posted-by {
+		color: #eee;
+		font-size: 0.9em;
+	}
+
+	.reply-to-msg {
+		margin-top: 50px;
+	}
+
+}
+
 
 

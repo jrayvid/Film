@@ -1,12 +1,42 @@
-<ul>
-	<li><%= link_to "Search For Talent", search_path(current_user) %></li> 
-	<li><%= link_to "Band Pages", bands_path %>
-	<li><%= link_to "Message Boards", messages_path %>
-	<li><%= link_to "Edit Your Account", edit_user_path(current_user) %></li><li><%= link_to "Delete Your Account", user_path(current_user), method: :delete, data: { confirm: "ARE YOU SURE YOU WANT TO DELETE YOUR ACCOUNT?" } %></li> | 
-	<li><%= link_to "Log Out", logout_path, method: :delete, data: { confirm: "ARE YOU SURE YOU WANT TO LOGOUT ?"}%></li> |
-	<li><%= link_to "Create Band Page", new_band_path %></li> |
-	
-</ul>
+
+  
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+<div class="row">
+  <div class="col-sm-3">
+    <span class="navbar-brand"></span>
+        </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse text-left-stacked text-uppercase" id="myNavbar">
+
+      <ul class="nav navbar-nav">
+        <li><%= link_to "Profile Page", user_path(current_user) %>
+        <li><%= link_to "Search For Talent", search_path(current_user) %></li>
+        <li><%= link_to "Band Pages", bands_path %></li>
+    	<li><%= link_to "Message Boards", messages_path %></li>
+   		 <li><%= link_to "Edit Your Account", edit_user_path(current_user) %></li>
+		<li><%= link_to "Delete Your Account", user_path(current_user), method: :delete, data: { confirm: "ARE YOU SURE YOU WANT TO DELETE YOUR ACCOUNT?" } %></li>
+		<li><%= link_to "Log Out", logout_path, method: :delete, data: { confirm: "ARE YOU SURE YOU WANT TO LOGOUT ?"}%></li> 
+		<li><%= link_to "Create Band Page", new_band_path %></li> |
+	 
+       
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+
+
 
 
 
