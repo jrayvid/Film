@@ -1,62 +1,56 @@
 
-<body class="bshow">
+<body>
 
 <%= render 'layouts/usernavigation' %>
 
-<div class="container"></div>
+<!-- <div class="container"></div> -->
 	<div class="Jumbotron text-center">
 		<h1><%= @band.bname %></h1>
 <br>
 </div>
 
  
-	<div class="container text-center">
+	<div class="container col-md-4">
 	<%= image_tag @band.avatar.url :large %>
+	<br>
+	<br>
+	<ul>
+	<li><%= audio_tag @band.mp3, controls: true%></li>
+	<li><h2><%=@band.track%></h2></li>
+	</ul>
+
+	<%= link_to "See Band Videos", band_videos_path(@band, @videos) %>
 	</div>
 
-<div class="procontainer col-sm-4 text-left text-justify">
+<div class="procontainer col-md-4 text-center text-uppercase">
 	<ul>	
 	<h3>
-	<p class="text-justify"><li>CITY:<br> <%=@band[:city]%></li><br></p>
-	<p class="text-justify"><li>STATE:<br> <%=@band[:state]%></li><br></p> 
-	<p class="text-justify"><li>EMAIL:<br><%=@band[:email]%></li><br></p>
-	<p class="text-justify"><li>GENRE:<br> <%=@band[:genre]%></li><br></p>
+	<p class="text-justify"><li>CITY:<br>
+		<answer class="blue">
+		<%=@band[:city]%></answer>
+	</li><br></p>
+	<p class="text-justify"><li>STATE:<br><answer class="blue"><%=@band[:state]%></answer></li><br></p> 
+	<p class="text-justify"><li>EMAIL:<br><answer class="blue"><%=@band[:email]%></answer></li><br></p>
+	<p class="text-justify"><li>GENRE:<br><answer class="blue"><%=@band[:genre]%></answer></li><br></p>
 
 	</h3>
 	</ul>
 </div>
 
-<div class="infocontainer col-sm-4 text-center">
+<div class="rightcontainer col-md-4 text-right">
 <h2>BIO:<%=@band[:bio] %></h2>
 	</div>
 
-
-
-
-
-	<div class="container col-md-4 text-center">
-<%= audio_tag @band.mp3, controls: true%><div class"text-center"><h2><%=@band.track%></h2></div>
-<%= link_to "See Band Videos", band_videos_path(@band, @videos) %>
-	</div>
-
-  
-	
-	
-	
-	
-	
-	
-
-
-
-<div class="menucontainer">
-	
+<div class="footer-container">
+	<ul class="footerclass">	
 <%= link_to "Post a video", new_band_video_path(@band, @video) %>
 		<li><%= link_to "Edit Band Page", edit_band_path(@band) %></li>
 		<li><%= link_to "Back To Profile", user_path(current_user) %></li>
-		<%= link_to "Delete Band", band_path(@band), method: :delete, data: { confirm: "You Want To Delete This Band" } %>
-
+		<li><%= link_to "Delete Band", band_path(@band), method: :delete, data: { confirm: "You Want To Delete This Band" } %></li>
+	</ul>
+</div>
 <%# unless @video.nil? %>
-	</div>
+
+</div>
 </body>
 <%# end %>

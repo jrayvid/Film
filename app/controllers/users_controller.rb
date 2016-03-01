@@ -29,14 +29,11 @@ end
 
 def update
  @user = User.find(params[:id])
- if @user.update_attributes(user_params)
-    if @user.roll == "Band" 
-      redirect_to band_path
-    else
+ @user.update_attributes(user_params)
     redirect_to user_path(current_user)
   end
-end
-end
+
+
 def destroy
  @user = User.find(params[:id])
  @user.delete

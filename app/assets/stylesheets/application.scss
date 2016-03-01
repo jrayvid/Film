@@ -86,7 +86,7 @@
 
 
 
-/*This is where the Login page is styled*/
+/*This is where the sessions is styled*/
 .wrapperlogin {
 	// background: url("/assets/clapper.png");
 	background-image: fixed;
@@ -110,7 +110,9 @@
 
 	padding-left: 402px;
 	}
-
+.piccontainer {
+	width: 50%;
+}
 // .login {
 // 	font-family: 'chalkduster';
 // 	font-size: 30px;
@@ -315,7 +317,7 @@ margin-top: -37px;
 /*band edit page ends here */
 
 /*band profile page begins here */
-.bshow {
+body {
 	background-color: gray;
 }
 .infocontainer {
@@ -328,11 +330,31 @@ margin-top: -37px;
 
 }
 .procontainer {
-	bottom: 400px;
-	margin-right: 459px;
-	margin-top: 44px;
+	// bottom: 400px;
+	// margin-right: 459px;
+	// margin-top: 44px;
+	// padding-left: 49px;
+	// padding-right: 242px;
+}
+
+.blue {
+	color: #0080FF;
+}
+ul.footerclass {
+	padding-top: 300px;
+}
+
+.green {
+	color: #40FF00; 
+}
+
+.player {
+	margin-top:	44px;
 	padding-left: 49px;
-	padding-right: 242px;
+	padding-right: 201px;
+}
+.rightcontainer {
+	height: 454px;
 }
 
 /*band profile page ends here */
