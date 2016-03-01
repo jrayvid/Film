@@ -44,7 +44,7 @@ end
 
 private
 def band_params
-	params.require(:band).permit(:bname, :city, :state, :email, :avatar, :mp3, :track)
+	params.require(:band).permit(:bname, :city, :state, :email, :avatar, :mp3, :track, :genre, :bio)
 	
 end
 

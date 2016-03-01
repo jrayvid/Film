@@ -2,6 +2,9 @@
 @import "bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 
+.navbar-nav {
+	padding-left: 300px;
+}
 // 
 /*This is where the home page is styled*/
 
@@ -301,6 +304,11 @@ margin-top: -37px;
 
 }
 
+/*Band index page starts here */
+
+
+/*Band index page ends here */
+
 /*band edit page starts here */
 
 
@@ -310,8 +318,21 @@ margin-top: -37px;
 .bshow {
 	background-color: gray;
 }
-.col-sm-2.bshow {
-	bottom: 500px;
+.infocontainer {
+	bottom: 400px;
+	// margin-left: 459px;
+	margin-top:	44px;
+	padding-left: 49px;
+	padding-right: 201px;
+
+
+}
+.procontainer {
+	bottom: 400px;
+	margin-right: 459px;
+	margin-top: 44px;
+	padding-left: 49px;
+	padding-right: 242px;
 }
 
 /*band profile page ends here */

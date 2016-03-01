@@ -4,8 +4,9 @@
 
 
 <% @bands.each do |b| %>
-<%= b.id %>
+<div class="col-md-4">
+<%= b.id %><br>
 <%= image_tag b.avatar.url :medium %>
 <%= link_to b.bname, band_path(b)%>
-
+</div>
 <% end %>

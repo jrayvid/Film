@@ -1,43 +1,62 @@
+
 <body class="bshow">
 
 <%= render 'layouts/usernavigation' %>
 
-<div class="container">
+<div class="container"></div>
 	<div class="Jumbotron text-center">
 		<h1><%= @band.bname %></h1>
 <br>
 </div>
 
-<!-- <h1> Welcome <%= @band.bname %></h1> -->
-<div class="container text-center">
+ 
+	<div class="container text-center">
 	<%= image_tag @band.avatar.url :large %>
-<br>
-<br>
+	</div>
+
+<div class="procontainer col-sm-4 text-left text-justify">
+	<ul>	
+	<h3>
+	<p class="text-justify"><li>CITY:<br> <%=@band[:city]%></li><br></p>
+	<p class="text-justify"><li>STATE:<br> <%=@band[:state]%></li><br></p> 
+	<p class="text-justify"><li>EMAIL:<br><%=@band[:email]%></li><br></p>
+	<p class="text-justify"><li>GENRE:<br> <%=@band[:genre]%></li><br></p>
+
+	</h3>
+	</ul>
+</div>
+
+<div class="infocontainer col-sm-4 text-center">
+<h2>BIO:<%=@band[:bio] %></h2>
+	</div>
+
+
+
+
+
+	<div class="container col-md-4 text-center">
 <%= audio_tag @band.mp3, controls: true%><div class"text-center"><h2><%=@band.track%></h2></div>
 <%= link_to "See Band Videos", band_videos_path(@band, @videos) %>
-  
 	</div>
+
+  
+	
+	
+	
+	
+	
 	
 
-	<div class="container-fluid text-right">
-	<div class="col-sm-2 bshow">	
-	<h2>CITY: 	<%=@band[:city]%><br>
-	STATE: 	<%=@band[:state]%><br>
-	EMAIL:	<%=@band[:email]%><br>
-	BIO:    <%=@band[:bio] %><br>
-	GENRE   <%=@band[:genre]%>	
-	</div></h2>
-	</ul>
 
 
-
+<div class="menucontainer">
 	
 <%= link_to "Post a video", new_band_video_path(@band, @video) %>
 		<li><%= link_to "Edit Band Page", edit_band_path(@band) %></li>
 		<li><%= link_to "Back To Profile", user_path(current_user) %></li>
-
+		<%= link_to "Delete Band", band_path(@band), method: :delete, data: { confirm: "You Want To Delete This Band" } %>
 
 <%# unless @video.nil? %>
-	
+	</div>
 </body>
 <%# end %>
