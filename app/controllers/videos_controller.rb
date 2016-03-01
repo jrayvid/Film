@@ -38,7 +38,7 @@ class VideosController < ApplicationController
   # PATCH/PUT /videos/1
   def update
     if @video.update(video_params)
-      redirect_to @video, notice: 'Video was successfully updated.'
+      redirect_to band_@video, notice: 'Video was successfully updated.'
     else
       render :edit
     end
@@ -49,7 +49,7 @@ class VideosController < ApplicationController
     @video = Video.find(params[:id])
     @band = Band.find(params[:band_id])
     @video.destroy
-    redirect_to band_path, notice: 'Video was successfully destroyed.'
+    redirect_to band_path(@band), notice: 'Video was successfully destroyed.'
   end
 
   private

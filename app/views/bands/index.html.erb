@@ -5,5 +5,7 @@
 
 <% @bands.each do |b| %>
 <%= b.id %>
+<%= image_tag b.avatar.url :medium %>
 <%= link_to b.bname, band_path(b)%>
+
 <% end %>

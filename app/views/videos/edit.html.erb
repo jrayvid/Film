@@ -1,6 +1,20 @@
 <h1>Editing Video</h1>
 
-<%= render 'form' %>
+<%= form_for [@band, @video] do |f| %>
 
-<%= link_to 'Show', @video %> |
+
+  <div class="form-inputs">
+    <%= f.text_field :title, placeholder: :title %>
+    
+    <%= f.text_field :url, placeholder: "URL" %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, method: :update %>
+  </div>
+
+<% end %>
+
+
 <%= link_to 'Back', band_videos_path %>

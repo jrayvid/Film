@@ -2,14 +2,7 @@
 @import "bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 
-.navbar-nav1 {
-	padding-top: 10px; 
-	margin-bottom: 0px;
-	margin-top: -44px;
-	border-top-width: -10px;
-	
-	
-}
+// 
 /*This is where the home page is styled*/
 
 .statichome  {
@@ -94,11 +87,11 @@
 .wrapperlogin {
 	// background: url("/assets/clapper.png");
 	background-image: fixed;
-	background-opacity: .03;
+	background-opacity: .4;
 	background-repeat: no-repeat;
 	background-color: gray;
 	
-	
+
 	margin-top: 30px;
 	margin: 0 auto;
 	
@@ -230,7 +223,11 @@ ul, li {
 #headshot1 {
 	
 }
-
+.navbar-nav > li > a {
+padding-top: 0px;
+padding-bottom: 0px;
+margin-top: -37px;
+}
 
 /*profile page ends*/
 
@@ -298,9 +295,25 @@ ul, li {
 
 	.reply-to-msg {
 		margin-top: 50px;
+
+
 	}
 
 }
 
+/*band edit page starts here */
+
+
+/*band edit page ends here */
+
+/*band profile page begins here */
+.bshow {
+	background-color: gray;
+}
+.col-sm-2.bshow {
+	bottom: 500px;
+}
+
+/*band profile page ends here */
 
 

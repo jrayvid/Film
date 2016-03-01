@@ -1,24 +1,43 @@
+<body class="bshow">
+
 <%= render 'layouts/usernavigation' %>
 
-<h1> BAND PAGE </h1>
+<div class="container">
+	<div class="Jumbotron text-center">
+		<h1><%= @band.bname %></h1>
+<br>
+</div>
 
-
-<h1> Welcome <%= @band.bname %></h1>
-
-<%= image_tag @band.avatar.url :medium %>
-
-
-  <%= audio_tag @band.mp3, controls: true %>
+<!-- <h1> Welcome <%= @band.bname %></h1> -->
+<div class="container text-center">
+	<%= image_tag @band.avatar.url :large %>
+<br>
+<br>
+<%= audio_tag @band.mp3, controls: true%><div class"text-center"><h2><%=@band.track%></h2></div>
+<%= link_to "See Band Videos", band_videos_path(@band, @videos) %>
   
+	</div>
+	
 
-	<h1> <%= @band.track %></h1>
+	<div class="container-fluid text-right">
+	<div class="col-sm-2 bshow">	
+	<h2>CITY: 	<%=@band[:city]%><br>
+	STATE: 	<%=@band[:state]%><br>
+	EMAIL:	<%=@band[:email]%><br>
+	BIO:    <%=@band[:bio] %><br>
+	GENRE   <%=@band[:genre]%>	
+	</div></h2>
+	</ul>
 
 
 
-<%= link_to "make a video", new_band_video_path(@band, @video) %>
-<li><%= link_to "Edit Band Page", edit_band_path(@band) %></li>
-<li><%= link_to "Back To Profile", user_path(current_user) %>
-<li>
+	
+<%= link_to "Post a video", new_band_video_path(@band, @video) %>
+		<li><%= link_to "Edit Band Page", edit_band_path(@band) %></li>
+		<li><%= link_to "Back To Profile", user_path(current_user) %></li>
+
+
 <%# unless @video.nil? %>
-	<%= link_to "See Band Videos", band_videos_path(@band, @videos) %>
+	
+</body>
 <%# end %>
