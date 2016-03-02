@@ -1,5 +1,5 @@
 
-<body>
+<body class="profile">
 
 <%= render 'layouts/usernavigation' %>
 
@@ -42,11 +42,15 @@
 	</div>
 
 <div class="footer-container">
-	<ul class="footerclass">	
-<%= link_to "Post a video", new_band_video_path(@band, @video) %>
-		<li><%= link_to "Edit Band Page", edit_band_path(@band) %></li>
-		<li><%= link_to "Back To Profile", user_path(current_user) %></li>
-		<li><%= link_to "Delete Band", band_path(@band), method: :delete, data: { confirm: "You Want To Delete This Band" } %></li>
+	<ul class="footerclass">
+	<div class="btn btn-primary btn-sm" role"button">	
+		<li><%= link_to "Post a video", new_band_video_path(@band, @video), class: "btn btn-dafault" %></li> </div>
+		<div class="btn btn-primary btn-sm" role"button">
+		<li><%= link_to "Edit Band Page", edit_band_path(@band), class: "btn btn-dafault" %></li></div>
+		<div class="btn btn-primary btn-sm" role"button">
+		<li><%= link_to "Back To Profile", user_path(current_user), class: "btn btn-dafault" %></li></div>
+		<div class="btn btn-primary btn-sm" role"button">
+		<li><%= link_to "Delete Band", band_path(@band), method: :delete, data: { confirm: "You Want To Delete This Band" }, class: "btn btn-dafault" %></li></div>
 	</ul>
 </div>
 <%# unless @video.nil? %>
