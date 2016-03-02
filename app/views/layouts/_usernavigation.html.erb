@@ -15,13 +15,13 @@
     </div>
     <div class="collapse navbar-collapse text-left-stacked text-uppercase" id="myNavbar">
 
-      <ul class="nav navbar-nav">
-        <li><%= link_to "Profile Page", user_path(current_user) %>
-        <li><%= link_to "Search For Talent", search_path(current_user) %></li>
-        <li><%= link_to "Band Pages", bands_path %></li>
-    	<li><%= link_to "Message Boards", messages_path %></li>
+      <ul class="nav navbar-nav usernav">
+        <li class="usernav"><%= link_to "Profile Page", user_path(current_user) %>
+        <li class="usernav"><%= link_to "Search For Talent", search_path(current_user) %></li>
+        <li class="usernav"><%= link_to "Band Pages", bands_path %></li>
+    	<li class="usernav"><%= link_to "Message Boards", messages_path %></li>
       
-   		 <li><%= link_to "Create Band Page", new_band_path %></li> 
+   		 <li class="usernav"><%= link_to "Create Band Page", new_band_path %></li> 
 	 </ul>
        
       <ul class="nav navbar-nav navbar-right">

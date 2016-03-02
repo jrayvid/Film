@@ -25,13 +25,13 @@
 <div class="procontainer col-md-4 text-center text-uppercase">
 	<ul>	
 	<h3>
-	<p class="text-justify"><li>CITY:<br>
+	<p class="text-justify"><li class="bs">CITY:<br>
 		<answer class="blue">
 		<%=@band[:city]%></answer>
 	</li><br></p>
-	<p class="text-justify"><li>STATE:<br><answer class="blue"><%=@band[:state]%></answer></li><br></p> 
-	<p class="text-justify"><li>EMAIL:<br><answer class="blue"><%=@band[:email]%></answer></li><br></p>
-	<p class="text-justify"><li>GENRE:<br><answer class="blue"><%=@band[:genre]%></answer></li><br></p>
+	<p><li class="bs">STATE:<br><answer class="blue"><%=@band[:state]%></answer></li><br></p> 
+	<p class="text-justify"><li class="bs">EMAIL:<br><answer class="blue"><%=@band[:email]%></answer></li><br></p>
+	<p class="text-justify"><li class="bs" >GENRE:<br><answer class="blue"><%=@band[:genre]%></answer></li><br></p>
 
 	</h3>
 	</ul>
@@ -43,14 +43,14 @@
 
 <div class="footer-container">
 	<ul class="footerclass">
-	<div class="btn btn-primary btn-sm" role"button">	
-		<li><%= link_to "Post a video", new_band_video_path(@band, @video), class: "btn btn-dafault" %></li> </div>
-		<div class="btn btn-primary btn-sm" role"button">
-		<li><%= link_to "Edit Band Page", edit_band_path(@band), class: "btn btn-dafault" %></li></div>
-		<div class="btn btn-primary btn-sm" role"button">
-		<li><%= link_to "Back To Profile", user_path(current_user), class: "btn btn-dafault" %></li></div>
-		<div class="btn btn-primary btn-sm" role"button">
-		<li><%= link_to "Delete Band", band_path(@band), method: :delete, data: { confirm: "You Want To Delete This Band" }, class: "btn btn-dafault" %></li></div>
+	<div class="btn btn-danger btn-sm" role"button">	
+		<li><%= link_to "Post a video", new_band_video_path(@band, @video), class: "btn btn-primary" %></li> </div>
+		<div class="btn btn-danger btn-sm" role"button">
+		<li><%= link_to "Edit Band Page", edit_band_path(@band), class: "btn btn-primary" %></li></div>
+		<div class="btn btn-danger btn-sm" role"button">
+		<li><%= link_to "Back To Profile", user_path(current_user), class: "btn btn-primary" %></li></div>
+		<div class="btn btn-danger btn-sm" role"button">
+		<li><%= link_to "Delete Band", band_path(@band), method: :delete, data: { confirm: "You Want To Delete This Band" }, class: "btn btn-primary" %></li></div>
 	</ul>
 </div>
 <%# unless @video.nil? %>

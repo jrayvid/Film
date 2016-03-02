@@ -1,13 +1,14 @@
 <%= render 'layouts/usernavigation' %>
 
-<h1>This is the band index page</h1>
+<h1 class="text-center text-uppercase">band's page</h1>
 
 
 <% @bands.each do |b| %>
 <% link_to b.bname, band_path(b)%>
 <div class="col-md-4">
 <% b.id %><br>
-<%= link_to image_tag b.avatar.url :medium %>
+<%= image_tag b.avatar.url :medium %>
+
 <%= link_to b.bname, band_path(b)%>
 </div>
 <% end %>
