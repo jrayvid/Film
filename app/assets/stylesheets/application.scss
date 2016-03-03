@@ -86,6 +86,7 @@ ul,li.usernav {
 .editpage {
 	background-image: url("/assets/editmess2.jpg");
 	background-size: 100%;
+	
 }
 
 .editform{
@@ -386,7 +387,51 @@ ul.footerclass {
 li.bs {
 	list-style-type: none;
 }
+.vb {
+	margin-left: 30px;
+}
+ul.footerclass {
+	
+	// position: absolute;
+}
 
 /*band profile page ends here */
+
+// Band video show page starts here
+.vshow {
+	background-image: url("/assets/movie_screen.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	// width: 100%;
+	// height: auto;
+	background-color: black;
+	position: fix;
+	
+}
+.vvideo {
+	margin-left: 341px;
+	margin-top: 125px;
+}
+
+
+// band video show page ends here
+
+// This is where the video index page starts
+.bkindex {
+	background-image: url("/assets/Stage-Spotlights-Background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+.inco {
+	color: white;
+}
+.picind {
+	padding-top: 99px;
+}
+
+
+// This is where the video index page ends
 
 

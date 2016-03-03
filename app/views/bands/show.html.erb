@@ -10,17 +10,15 @@
 </div>
 
  
-	<div class="container col-md-4">
+		<div class="container col-md-4">
 	<%= image_tag @band.avatar.url :large %>
 	<br>
 	<br>
 	<ul>
-	<li><%= audio_tag @band.mp3, controls: true%></li>
-	<li><h2><%=@band.track%></h2></li>
+	<li class="bs"><%= audio_tag @band.mp3, controls: true%></li>
+	<li class="bs"><h2><%=@band.track%></h2></li>
 	</ul>
-
-	<%= link_to "See Band Videos", band_videos_path(@band, @videos) %>
-	</div>
+		</div>
 
 <div class="procontainer col-md-4 text-center text-uppercase">
 	<ul>	
@@ -32,25 +30,27 @@
 	<p><li class="bs">STATE:<br><answer class="blue"><%=@band[:state]%></answer></li><br></p> 
 	<p class="text-justify"><li class="bs">EMAIL:<br><answer class="blue"><%=@band[:email]%></answer></li><br></p>
 	<p class="text-justify"><li class="bs" >GENRE:<br><answer class="blue"><%=@band[:genre]%></answer></li><br></p>
+	<div class="btn btn-danger btn-lg" role"button">
+	<li class="bs"><%= link_to "See Band Videos", band_videos_path(@band, @videos), class: "btn btn-primary" %>
+	</li>
 
 	</h3>
 	</ul>
 </div>
 
-<div class="rightcontainer col-md-4 text-right">
-<h2>BIO:<%=@band[:bio] %></h2>
+<div class="rightcontainer col-md-3 text-right">
+<h2><%=@band[:bio] %></h2>
 	</div>
 
 <div class="footer-container">
 	<ul class="footerclass">
 	<div class="btn btn-danger btn-sm" role"button">	
-		<li><%= link_to "Post a video", new_band_video_path(@band, @video), class: "btn btn-primary" %></li> </div>
+		<li class="bs"><%= link_to "Post a video", new_band_video_path(@band, @video), class: "btn btn-primary" %></li> </div>
 		<div class="btn btn-danger btn-sm" role"button">
-		<li><%= link_to "Edit Band Page", edit_band_path(@band), class: "btn btn-primary" %></li></div>
+		<li class="bs"><%= link_to "Edit Band Page", edit_band_path(@band), class: "btn btn-primary" %></li></div>
 		<div class="btn btn-danger btn-sm" role"button">
-		<li><%= link_to "Back To Profile", user_path(current_user), class: "btn btn-primary" %></li></div>
-		<div class="btn btn-danger btn-sm" role"button">
-		<li><%= link_to "Delete Band", band_path(@band), method: :delete, data: { confirm: "You Want To Delete This Band" }, class: "btn btn-primary" %></li></div>
+		<li class="bs"><%= link_to "Back To Profile", user_path(current_user), class: "btn btn-primary" %></li></div>
+		
 	</ul>
 </div>
 <%# unless @video.nil? %>
