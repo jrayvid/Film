@@ -36,7 +36,7 @@ def update
 
 def destroy
  @user = User.find(params[:id])
- @user.delete
+ @user.destroy
  flash[:notice] = "Account Deleted!"
  redirect_to '/' 
 end

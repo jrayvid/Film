@@ -1,10 +1,9 @@
 class User < ActiveRecord::Base
 	has_secure_password
-	has_many :messages
-	has_many :comments
-	has_many :videos
-	has_many :bands
-
+	has_many :messages, dependent: :destroy 
+	has_many :comments, dependent: :destroy  
+	has_many :videos, dependent: :destroy 
+	has_many :bands, dependent: :destroy
 	validates_presence_of :fname, :lname, :city, :state, :email, :username
 	validates_presence_of :password, on: :create 
 
