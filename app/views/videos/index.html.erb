@@ -1,4 +1,5 @@
-<body class="bkindex">
+<%= render 'layouts/usernavigation' %>
+<body class="bkindex text-uppercase">
 
 <!-- <p id="notice"><%= notice %></p> -->
   
@@ -27,7 +28,7 @@
         
         <div class="btn-group btn btn-danger btn-sm"><%= link_to 'Show', band_video_path(@band, video), class: "btn btn-danger" %></div>
 
-        <div class="btn-group btn btn-danger btn-sm"><%= link_to 'Edit', edit_band_video_path(@band, video), class: "btn btn-danger" %></div>
+        <%# link_to 'Edit', edit_band_video_path(@band, video), class: "btn btn-danger" %>
         <div class="btn-group btn btn-danger btn-sm"><%= link_to 'Destroy', band_video_path(@band, video), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
         </div>
       </div>

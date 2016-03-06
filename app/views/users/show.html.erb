@@ -3,19 +3,19 @@
 <%= render 'layouts/usernavigation' %>
 	
 <div id="profilepage">
-<h1>Welcome <%= @user.fname %></h1>
+<h1 class="text-uppercase">Welcome <%= @user.fname %></h1>
 <br>
 	<div id="headshot">
 	<%= image_tag @user.avatar.url :medium %>
 	</div>	
-<div>
-First Name:<%= @user.fname %><br><br>
-Last Name:<%= @user.lname %><br><br>
-City:<%= @user.city %><br><br>
-State:<%= @user.state %><br><br>
-Email:<%= @user.email %><br><br>
-Username <%= @user.username %><br><br>
-Role: <%= @user.roll %> 
+<div class="text-uppercase">
+<strong>First Name</strong>:  <%= @user.fname %><br><br>
+<strong>Last Name</strong>:   <%= @user.lname %><br><br>
+<strong>City</strong>:        <%= @user.city %><br><br>
+<strong>State</strong>:       <%= @user.state %><br><br>
+<strong>Email</strong>:       <%= @user.email %><br><br>
+<strong>Username</strong>:     <%= @user.username %><br><br>
+<strong>Role</strong>:        <%= @user.roll %> 
 </div>
 
 <br>

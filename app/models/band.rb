@@ -1,7 +1,7 @@
 class Band < ActiveRecord::Base
 	belongs_to :user
 	has_many :videos
-	validates_presence_of :bname
+	# validates_presence_of :bname
 	
 	
 
