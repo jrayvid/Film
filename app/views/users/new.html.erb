@@ -1,27 +1,28 @@
 <body class="signupbod">
-  
-  <div class="container center_div">
-<div id="signupform">
-  <h2>Sign Up!</h2>
-  <%= form_for @user do |f| %>
-  <h2><br>
-  <%= f.text_field :fname, :placeholder => "First Name" %><br>
-  <br>
-  <%= f.text_field :lname, :placeholder => "Last Name" %><br>
-  <br>
-  <%= f.text_field :city, :placeholder => "City" %><br>
-  <br>
-  <%= f.text_field :state, :placeholder => "State" %><br>
-  <br>
-  <%= f.text_field :email, :placeholder => "Email" %><br>
-  <br>
-  <%= f.text_field :username, :placeholder => "UserName" %><br>
-  <br>
-  <%= f.password_field :password, :placeholder => "Password" %>
-  <br>
-  <%= f.submit 'Sign Up'%></h2>
-<% end %>
-</div>
+<div class="col-lg-4 col-lg-offset-4">
+      <div class="container-fluid">
+        <div id="signupform">
+        <h2>Sign Up!</h2>
+        <%= form_for @user do |f| %>
+        <h2><br>
+        <%= f.text_field :fname, :placeholder => "First Name" %><br>
+        <br>
+        <%= f.text_field :lname, :placeholder => "Last Name" %><br>
+        <br>
+        <%= f.text_field :city, :placeholder => "City" %><br>
+        <br>
+        <%= f.text_field :state, :placeholder => "State" %><br>
+        <br>
+        <%= f.text_field :email, :placeholder => "Email" %><br>
+        <br>
+        <%= f.text_field :username, :placeholder => "UserName" %><br>
+        <br>
+        <%= f.password_field :password, :placeholder => "Password" %>
+        <br>
+        <%= f.submit 'Sign Up'%></h2>
+      <% end %>
+      </div>
+  </div>
 </div>
 </body>
 

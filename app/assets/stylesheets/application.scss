@@ -19,6 +19,9 @@ ul.hm {
 	text-decoration: none;
 
 }
+ul.messagebottom {
+	list-style-type: none;
+}
 
 
 /*layout usernavigation starts here*/
@@ -71,6 +74,8 @@ ul,li.usernav {
 	position: fixed;
 }
 
+
+
 	
 /*this is where the static home page ends
 
@@ -111,6 +116,8 @@ ul,li.usernav {
 .welcome {
 	background-image:url("Pics/movie_screen2.jpg");
 	background-size: cover;
+	background-color: black;
+	background-repeat: no-repeat;
 }
 
 
@@ -219,7 +226,7 @@ ul,li.usernav {
 }
 
 .signupbod{
-	background-image: url('/assets/movie_set.jpg');
+	background-image: url('/assets/signup.1.jpg');
 	background-size: cover;
 }
 
@@ -228,9 +235,9 @@ ul,li.usernav {
 	height: 540px;
 	color: black;
 	text-align: center;
-	background-color: grey;
+	
 	text: uppercase;
-	opacity: 0.8;
+	opacity: 3.8;
 }
 #firstname {
 	font-family: 'Oswald', sans-serif;
@@ -278,31 +285,38 @@ margin-top: -37px;
 /*This is where the search page is styled*/
 .searchbod{
 	background-image: url('/assets/projector2.jpg'); 
-	background-size: 130%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: black;
+
 }
 
 .searchwrap{
 	height: 300px;
 	width: 300px;
-	margin-top: 150px;
-	margin-right: 50px;
+	margin-top: 31px;
+	margin-right: 235px;
 	float: right;
+	display: block;
 }
 
-#searchfield{
-	margin: 0 auto;
-	text-align: center;
-}
+// #searchfield{
+// 	// margin: 0 auto;
+// 	text-align: center;
+// }
 
-#searchshow{
-	margin: 0 auto;
-	text-align: center;
+
+p.show {
+	font-size: 35px;
 }
+// #searchshow {
+// 	display: none;
+// }
 
 /*bands signup page starts here*/
 
 #bands {
-	background-color: grey;
+	background-color: #383838;
 	
 }
 /* Message show-page styles */
@@ -451,9 +465,3 @@ input[type="file"]{
 	background-color: #819FF7;
 }
 
-// layout styling starts here
-ul.messagebottom {
-	list-style-type: none;
-}
-
-// layouts styling ends here

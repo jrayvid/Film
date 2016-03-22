@@ -17,9 +17,12 @@
 //= require bootstrap-sprockets
 
 
-$(document).ready(function(){
-
-$('.image > img').hover(makeLarger, makeNormal);
+$(document).on("ready page:change", function(){
+	$('.image > img').hover(makeLarger, makeNormal);
+	$('form').click(function(){
+		
+	});
+});
 
 function makeLarger() {
 	$(this).css({height: '+=50%', width: '+=50%'});
@@ -27,6 +30,3 @@ function makeLarger() {
 function makeNormal () {
 	$(this).css({height : "", width: ""});
 }
-
-
-});
