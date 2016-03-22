@@ -1,12 +1,12 @@
 
 
-<p>Posted by <%= @message.user.username %><br><%= time_ago_in_words(@message.created_at)%> ago</p> 
-<p><%= @message.description %></p>
+ 
+<h1><%= @message.description %></h1>
+<p>Posted by <%= @message.user.username %><br><%= time_ago_in_words(@message.created_at)%> ago</p>
 
-<h4>Opinions:</h4>
-<%= render @message.comments %>
+<h2><%= render @message.comments %></h2>
 
-<h2>Give Your Opinion</h2>
+<h3>Reply</h3>
 <%= render 'comments/form' %>
 
 </div>

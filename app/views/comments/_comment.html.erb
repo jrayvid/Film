@@ -1,5 +1,5 @@
 <p><%= comment.content %></p>
-	<p>Replied By <%= comment.user.username %> <%= time_ago_in_words(comment.created_at) %> Ago</p>
+	<h5>Replied By <%= comment.user.username %> <%= time_ago_in_words(comment.created_at) %> Ago</h5>
 <%= link_to "Edit", edit_message_comment_path(comment.message, comment) %>
 
 <%= link_to "Delete", message_comment_path(comment.message, comment), method: :delete, data: { confirm: "Really?"} %>
