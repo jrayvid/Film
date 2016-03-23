@@ -25,7 +25,7 @@ $(document).on("ready page:change", function(){
 });
 
 function makeLarger() {
-	$(this).css({height: '+=50%', width: '+=50%'});
+	$(this).css({height: '+=50%', width: '+=50%'}).zIndex();
 }
 function makeNormal () {
 	$(this).css({height : "", width: ""});

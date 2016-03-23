@@ -123,18 +123,31 @@ ul,li.usernav {
 
 
 /*This is where the sessions is styled*/
-// .wrapperlogin {
-// 	// background: url("/assets/clapper.png");
-// 	background-image: fixed;
-// 	background-opacity: .4;
-// 	background-repeat: no-repeat;
-// 	background-color: gray;
-	
 
-// 	margin-top: 30px;
-// 	margin: 0 auto;
+.background {
+	background-color: #FFFFF;
+	background-image: url('/assets/login.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.signinform {
+	margin-top: 150px;
+	color: red;
+
+}
+//  .wrapperlogin {
+// 	background-image: url("/assets/clapper.png");
+// // 	background-image: fixed;
+// // 	background-opacity: .4;
+ 	
+// 	background-size: cover;
+// 	// margin-right: 413px;
+// // 	margin-top: 30px;
+// // 	// margin: 0 auto;
+// // 	margin-top: 200px;
 	
-// }
+//  }
 
 // .center-block {
 //     display: block;
@@ -142,40 +155,41 @@ ul,li.usernav {
 //     margin-right: auto;
 //  }
 
-.clapper {
+// .clapper {
 
-	padding-left: 402px;
-	}
-.piccontainer {
-	width: 50%;
-}
+// 	padding-left: 402px;
+// 	}
+// .piccontainer {
+// 	width: 50%;
+// }
 
-/*login page starts here */
-// .login {
-// 	font-family: 'chalkduster';
-// 	font-size: 30px;
-// 	margin-left: 655px;
-//     margin-bottom: 272px;
-//     margin-top: -315px;
+// .login1 {
+// 	padding-top: 42px;
+// // 	font-family: 'chalkduster';
+// // 	font-size: 30px;
+// // 	margin-left: 655px;
+// //     margin-bottom: 272px;
+// //     margin-top: -315px;
 // }
 
 // .loginh2 {
-// 	font-family: 'chalkduster';
-// 	font-size: 25px;
-// 	color: white;
-//     margin-top: -221px;
-//     margin-left: 494px;
+// 	padding-top: 46px;
+// // 	font-family: 'chalkduster';
+// // 	font-size: 25px;
+// // 	color: white;
+// //     margin-top: -221px;
+// //     margin-left: 494px;
 // }
 
 // .loginh3 {
 // 	font-family: 'chalkduster';
-// 	height: 30px;
-// 	font-size: 25px;
-// 	color: white;
-// 	margin-bottom: 800px;
-//     margin-left: 498px;
-//     margin-top: 50px;
-//  }
+// // 	height: 30px;
+// // 	font-size: 25px;
+// // 	color: white;
+// // 	margin-bottom: 800px;
+// //     margin-left: 498px;
+// //     margin-top: 50px;
+// }
 
 //  .button1 {
 // 	margin-left: 666px;
@@ -183,12 +197,15 @@ ul,li.usernav {
 //     size: 20em;
 // }  
 
-.input1 {
-	height: 21px;
-	width: 164px;
-}
+// .input1 {
+// 	height: 21px;
+// 	width: 164px;
+// }
 /* this is where the log-in page ends */
 
+
+
+// SIGN UP PAGE STARTS
 
 // h1 {
 // 	padding: 0px 0px 0px 0px;
@@ -208,7 +225,7 @@ ul,li.usernav {
 // 	color: blue;
 // }
 
-
+//SIGN UP FORM
 
 // ul, li {
 // 	display: inline;
@@ -243,6 +260,9 @@ ul,li.usernav {
 	font-family: 'Oswald', sans-serif;
 	font-size: 25px;
 }
+
+// sign up page ends
+
 /*This is where the profile page is styled*/
 .profilebod{
 	background-image: url('/assets/movie_screen2.jpg');

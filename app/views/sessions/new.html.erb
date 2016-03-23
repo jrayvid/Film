@@ -1,16 +1,18 @@
 
-<%= render 'layouts/navigation'%>
+
 <h2><%= flash[:notice] if flash[:notice] %></h2>
-<body class="wrapperlogin">
+ 
+<body class="background">
+
+
 
 	<!-- <div class="clapper">
 		
 	</div> -->
-	<!-- <div class="container">
-		<h1> <div class= "login text-center">LOG IN</h1>
- 				</div> -->
+	<!-- <h1 class="text center">WELCOME BACK</H1> -->
+<div class="signinform">
 	<%= form_tag login_path do%>
-	<h1><div class="loginh1 text-center text-uppercase text-primary">
+	<h1><div class="text-center text-uppercase">
 		<%= label_tag :username %>
 		</div></h1>
 
@@ -19,27 +21,28 @@
 		</div></h1>
 	<br>
 
-	<h1><div class="loginh1 text-center text-uppercase text-primary">
+	<h1><div class="text-center text-uppercase">
 		<%= label_tag :password %></div>
-	<h1><div class="login1 text-center text-uppercase">
+	<h1><div class="login3 text-center text-uppercase">
 		<%= password_field_tag :password %>
 	</div></h1>
+</div>
 
 
 	<div class= "button1 text-center">
 		<%= submit_tag "ACTION" %>
 
 	<% end %>	
+
 </div>
-</div>
-<div class="container">
+<!-- <div class="container">
 <div class="row">
   <div class="span4"></div>
   <div class="span4"><img class="piccontainer center-block" src="/assets/clapper.png" /></div>
   <div class="span4"></div>
-</div>
+</div> -->
 	
-	
-
 </body>
+
+
 

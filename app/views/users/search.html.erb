@@ -1,33 +1,23 @@
 <%=render 'layouts/usernavigation' %>
 <body class="searchbod">
-<div class="searchwrap">
-	<div id="searchfield">
-<!-- <h1>Search for Talent</h1> -->
-<%= form_tag("/search_page", method: "get") do %>
-	<h2><%= label_tag(:query, "Search For Talent:") %></h2>
-	<%= text_field_tag(:query) %>
-	<%= submit_tag("Submit") %>
-	</div>
-
-	<% end %>
-
-	
-<% if @users %>
-	<% @users.each do |u|%>
-	<%= link_to u.username, user_path(u)%></h5>
-		<div class="image">
-	<%= image_tag u.avatar.url :thumb %> 
+	<div class="searchwrap">
+		<div id="searchfield">
+	<!-- <h1>Search for Talent</h1> -->
+			<%= form_tag("/search_page", method: "get") do %>
+			<h2><%= label_tag(:query, "Search For Talent:") %></h2>
+			<%= text_field_tag(:query) %>
+			<%= submit_tag("Submit") %>
 		</div>
-
-
-
-
-
-
-
-<% end %>
-<%end%>
-</div>
+		<% end %>
+		<% if @users %>
+			<% @users.each do |u|%>
+			<%= link_to u.username, user_path(u)%></h5>
+			<div class="image">
+				<%= image_tag u.avatar.url :thumb %> 
+			</div>
+			<% end %>
+		<%end%>
+	</div>
 
 
 </body>
