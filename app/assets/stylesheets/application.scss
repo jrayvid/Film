@@ -383,7 +383,7 @@ p.show {
 
 /*band edit page ends here */
 
-/*band profile page begins here */
+/*band show page begins here */
 .profile {
 	background-color: gray;
 }
@@ -424,6 +424,11 @@ ul.footerclass {
 	height: 454px;
 }
 li.bs {
+	list-style-type: none;
+
+}
+li.bs1 {
+	float: left;
 	list-style-type: none;
 }
 .vb {
