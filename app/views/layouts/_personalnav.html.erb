@@ -1,8 +1,8 @@
 <div class = " text-left nav fixed-bottom">
 	<div class="container">
 
-<span class="btn btn-primary btn-sm" role="button"><%= link_to "Edit Your Account", edit_user_path(current_user), class: "btn btn-danger" %></span>
+<span class="btn btn-primary btn-sm" role="button"><%= link_to "Edit Your Account", edit_user_path(current_user), class: "btn btn-primary" %></span>
 
-<span class="text-center btn btn-primary btn-sm" role="button"><%= link_to "Delete Your Account", user_path(current_user), method: :delete, data: { confirm: "ARE YOU SURE YOU WANT TO DELETE YOUR ACCOUNT?" }, class: "btn btn-danger" %></span>
+<span class="text-center btn btn-danger btn-sm" role="button"><%= link_to "Delete Your Account", user_path(current_user), method: :delete, data: { confirm: "ARE YOU SURE YOU WANT TO DELETE YOUR ACCOUNT?" }, class: "btn btn-danger" %></span>
 </div>
 </div>

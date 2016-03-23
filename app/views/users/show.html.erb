@@ -8,11 +8,13 @@
 	<div id="headshot">
 	<%= image_tag @user.avatar.url :medium %>
 	</div>	
-<div class="text-uppercase">
+<div class="text-capitalize">
 <strong>First Name</strong>:  <%= @user.fname %><br><br>
 <strong>Last Name</strong>:   <%= @user.lname %><br><br>
 <strong>City</strong>:        <%= @user.city %><br><br>
+	<div class="text-uppercase">
 <strong>State</strong>:       <%= @user.state %><br><br>
+	</div>
 <strong>Email</strong>:       <%= @user.email %><br><br>
 <strong>Username</strong>:     <%= @user.username %><br><br>
 <strong>Role</strong>:        <%= @user.roll %> 
